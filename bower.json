@@ -1,0 +1,25 @@
+{
+  "name": "MyApp",
+  "version": "0.0.0",
+  "authors": [
+    "me! <me@myemail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "angular": "1.2.16",
+    "angular-route": "1.2.16",
+    "bootstrap": "~3.1.1"
+  }
+}

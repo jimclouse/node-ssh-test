@@ -1,0 +1,33 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/Users/jclouse/.nvm/v0.10.3/bin/npm', 'start' ]
+2 info using npm@2.1.6
+3 info using node@v0.10.3
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info prestart MyApp@0.0.1
+6 info start MyApp@0.0.1
+7 verbose unsafe-perm in lifecycle true
+8 info MyApp@0.0.1 Failed to exec start script
+9 verbose stack Error: MyApp@0.0.1 start: `coffee ./bin/server.coffee`
+9 verbose stack Exit status 8
+9 verbose stack     at ChildProcess.<anonymous> (/Users/jclouse/.nvm/v0.10.3/lib/node_modules/npm/lib/utils/lifecycle.js:212:16)
+9 verbose stack     at ChildProcess.EventEmitter.emit (events.js:98:17)
+9 verbose stack     at maybeClose (child_process.js:732:16)
+9 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:799:5)
+10 verbose pkgid MyApp@0.0.1
+11 verbose cwd /Users/jclouse/Development/personal/nodeAngularTemplate
+12 error Darwin 13.4.0
+13 error argv "node" "/Users/jclouse/.nvm/v0.10.3/bin/npm" "start"
+14 error node v0.10.3
+15 error npm  v2.1.6
+16 error code ELIFECYCLE
+17 error MyApp@0.0.1 start: `coffee ./bin/server.coffee`
+17 error Exit status 8
+18 error Failed at the MyApp@0.0.1 start script.
+18 error This is most likely a problem with the MyApp package,
+18 error not with npm itself.
+18 error Tell the author that this fails on your system:
+18 error     coffee ./bin/server.coffee
+18 error You can get their info via:
+18 error     npm owner ls MyApp
+18 error There is likely additional logging output above.
+19 verbose exit [ 1, true ]
