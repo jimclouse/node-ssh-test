@@ -4,9 +4,11 @@ logger      = require "morgan"
 bodyParser  = require "body-parser"
 debug       = require("debug")("linkedInServices")
 http        = require 'http'
+ssh2        = require '../lib/sshClient'
 
 app = express() 
 app.set('root', process.cwd())
+app.locals.root = app.get("root")
 
 #get the port situated based on environment
 if process.env['ENVIRONMENT'] == "production"
@@ -26,7 +28,13 @@ app.engine('html', require('ejs').renderFile)
 
 app.get '/', (req, res) -> res.render 'app.html'
 app.get '/index', (req, res) -> res.render 'app.html'
+
+
+app.get '/ssh-test', (req, res) -> ssh2.test(app.locals)
+
 app.get '*', (req, res) -> res.redirect '/#/404'
+
+
 
 server = http.createServer(app)
 
